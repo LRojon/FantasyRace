@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fantasyrace",
+  "name": "Fantasy Race",
+  "description": "Ajoute des race pour le joueur.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Loïc Rojon"],
+  "credits": "The Forge and FML guys, minecraftforgefrance.fr",
+  "logoFile": "Logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
