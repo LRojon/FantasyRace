@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -39,7 +40,7 @@ public class FantasyRaceItems {
     }
 
     @SubscribeEvent
-    public static void registerItemModels(ModelRegistryEvent e)
+    public static void registerModels(ModelRegistryEvent e)
     {
         init();
         for(Item item : items)
@@ -50,7 +51,8 @@ public class FantasyRaceItems {
 
     public static void registerModel(Item item)
     {
-        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(References.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
+        //ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(References.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
+        GameRegistry.findRegistry(Item.class).register(item);
     }
 
     public List<Item> getItems() {

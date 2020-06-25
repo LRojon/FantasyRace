@@ -1,0 +1,6 @@
+{
+  "parent": "fantasyrace:block/iron_ladder",
+  "textures": {
+    "layer0": "fantasyrace:items/iron_ladder"
+  }
+}
